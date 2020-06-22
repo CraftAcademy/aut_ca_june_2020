@@ -2,6 +2,8 @@ require "rails_helper"
 
 feature "Visitor can view articles" do
   before do
+    create(:article, title: "Corona virus officially wiped out" )
+    create(:article, title: "The economy is booming" )
     visit root_path
   end
 
